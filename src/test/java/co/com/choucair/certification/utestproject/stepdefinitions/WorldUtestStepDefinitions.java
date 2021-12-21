@@ -6,6 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import tasks.Fill;
 import tasks.FormOne;
 import tasks.OpenUp;
 
@@ -22,7 +23,7 @@ public class WorldUtestStepDefinitions {
 
     @When("^he search for the registration form in the uTest community web page$")
     public void heSearchForTheRegistrationFormInTheUTestCommunityWebPage() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo(Fill.onThePage());
     }
 
     @Then("^he registers his information and see the account register confirmation$")
