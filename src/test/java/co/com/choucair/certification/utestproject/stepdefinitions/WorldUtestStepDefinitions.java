@@ -6,10 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import tasks.Fill;
-import tasks.FormOne;
-import tasks.FormThree;
-import tasks.OpenUp;
+import tasks.*;
 
 public class WorldUtestStepDefinitions {
     @Before
@@ -26,6 +23,7 @@ public class WorldUtestStepDefinitions {
     public void heSearchForTheRegistrationFormInTheUTestCommunityWebPage() {
         OnStage.theActorInTheSpotlight().attemptsTo(Fill.onThePage());
         OnStage.theActorInTheSpotlight().attemptsTo(FormThree.onThePage());
+        OnStage.theActorInTheSpotlight().attemptsTo(LastForm.onThePage());
     }
 
     @Then("^he registers his information and see the account register confirmation$")
