@@ -19,5 +19,7 @@ public class LastFormPage extends PageObject {
             "/div/div[2]/div/form/div[6]/label/span[1]"));
     public static final Target COMPLETE_SETUP = Target.the("where we select " +
             "the computer OS").located(By.xpath("//*[@id=\"laddaBtn\"]"));
+    public static final Target CONFIRMATION = Target.the("where we select " +
+            "the computer OS").located(By.xpath("/html/body/ui-view/unauthenticated-container/div/div/div/ui-view/div/div/div/div[1]/div/h1"));
 
 }
