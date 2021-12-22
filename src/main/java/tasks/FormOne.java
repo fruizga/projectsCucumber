@@ -18,7 +18,7 @@ public class FormOne implements Task {
         actor.attemptsTo(Click.on(UtestFormOnePage.JOIN_BUTTON),
                 Enter.theValue("TypeYourFirstName").into(UtestFormOnePage.FIRST_NAME),
                 Enter.theValue("TypeYourLastName").into(UtestFormOnePage.LAST_NAME),
-                Enter.theValue("jorgeluis@example.com").into(UtestFormOnePage.EMAIL_ADDRESS),
+                Enter.theValue("emailemailmy@example.com").into(UtestFormOnePage.EMAIL_ADDRESS),
                 SelectFromOptions.byIndex(5).from(UtestFormOnePage.BIRTH_MONTH),
                 SelectFromOptions.byIndex(21).from(UtestFormOnePage.BIRTH_DAY),
                 SelectFromOptions.byIndex(13).from(UtestFormOnePage.BIRTH_YEAR),
