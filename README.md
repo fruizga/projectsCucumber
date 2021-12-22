@@ -3,6 +3,11 @@
 ### Description
 Perform the automation to enter the Utest.com page and proceed to click on the JOIN TODAY option and fill out the form to create a new user.
 
+### Requirements
+
+- Application of the Screenplay Pattern.
+- Application of the project model and structure.
+
 ### How to use
 1. Verify if you have installed:
    - Java 1.8 AND JDK
