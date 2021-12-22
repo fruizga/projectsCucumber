@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class FillFormPage extends PageObject {
     public static final Target CITY = Target.the("where we type the city").located(By.id("city"));
-    public static final Target CITY_MAP = Target.the("where we type the city").located(By.xpath("//*" +
+    public static final Target CITY_MAP = Target.the("where we view the city map").located(By.xpath("//*" +
             "[@id=\"map\"]/div/div/div[2]/div[2]"));
     public static final Target ZIP_CODE = Target.the("where we type the zip or " +
             "postal code").located(By.id("zip"));
