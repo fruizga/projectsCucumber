@@ -3,12 +3,11 @@ package tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.actions.*;
 import org.openqa.selenium.Keys;
 import userinterface.FillFormPage;
 import userinterface.UtestFormOnePage;
+
 
 public class Fill implements Task {
 
@@ -22,6 +21,7 @@ public class Fill implements Task {
                 Hit.the(Keys.ARROW_DOWN).keyIn(FillFormPage.CITY),
                 Click.on(FillFormPage.CITY_MAP),
                 Enter.theValue("055428").into(FillFormPage.ZIP_CODE),
-                Click.on(FillFormPage.NEXT_BUTTON));
+                Click.on(FillFormPage.NEXT_BUTTON)
+                );
     }
 }

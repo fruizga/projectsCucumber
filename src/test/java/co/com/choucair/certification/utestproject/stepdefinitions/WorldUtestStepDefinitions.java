@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import tasks.Fill;
 import tasks.FormOne;
+import tasks.FormThree;
 import tasks.OpenUp;
 
 public class WorldUtestStepDefinitions {
@@ -24,6 +25,7 @@ public class WorldUtestStepDefinitions {
     @When("^he search for the registration form in the uTest community web page$")
     public void heSearchForTheRegistrationFormInTheUTestCommunityWebPage() {
         OnStage.theActorInTheSpotlight().attemptsTo(Fill.onThePage());
+        OnStage.theActorInTheSpotlight().attemptsTo(FormThree.onThePage());
     }
 
     @Then("^he registers his information and see the account register confirmation$")

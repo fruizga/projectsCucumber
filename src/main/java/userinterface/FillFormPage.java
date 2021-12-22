@@ -13,4 +13,5 @@ public class FillFormPage extends PageObject {
     public static final Target NEXT_BUTTON = Target.the("button to " +
             "continue to the next form").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]" +
             "/div/form/div[2]/div/a"));
+
 }
