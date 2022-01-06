@@ -18,10 +18,11 @@ public class FormOne implements Task {
         actor.attemptsTo(Click.on(UtestFormOnePage.JOIN_BUTTON),
                 Enter.theValue("TypeYourFirstName").into(UtestFormOnePage.FIRST_NAME),
                 Enter.theValue("TypeYourLastName").into(UtestFormOnePage.LAST_NAME),
-                Enter.theValue("myemailemailmy@example.com").into(UtestFormOnePage.EMAIL_ADDRESS),
-                SelectFromOptions.byIndex(5).from(UtestFormOnePage.BIRTH_MONTH),
-                SelectFromOptions.byIndex(21).from(UtestFormOnePage.BIRTH_DAY),
-                SelectFromOptions.byIndex(13).from(UtestFormOnePage.BIRTH_YEAR),
+                Enter.theValue("demetrios@examplo.com").into(UtestFormOnePage.EMAIL_ADDRESS),
+                SelectFromOptions.byVisibleText("June").from(UtestFormOnePage.BIRTH_MONTH),
+                SelectFromOptions.byVisibleText("19").from(UtestFormOnePage.BIRTH_DAY),
+                SelectFromOptions.byVisibleText("1985").from(UtestFormOnePage.BIRTH_YEAR),
+                Enter.theValue("Spanish").into(UtestFormOnePage.LANGUAGE),
                 Click.on(UtestFormOnePage.NEXT_BUTTON));
     }
 }

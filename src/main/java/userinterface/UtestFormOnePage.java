@@ -20,6 +20,8 @@ public class UtestFormOnePage extends PageObject {
             "the day of birth").located(By.id("birthDay"));
     public static final Target BIRTH_YEAR = Target.the("where we select " +
             "the year of birth").located(By.id("birthYear"));
+    public static final Target LANGUAGE = Target.the("where we select " +
+            "the year of birth").located(By.xpath("//*[@id=\"languages\"]/div[1]/input"));
     public static final Target NEXT_BUTTON = Target.the("button to " +
             "continue to the next form").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]" +
             "/div/form/div[2]/a"));

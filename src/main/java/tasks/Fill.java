@@ -17,8 +17,9 @@ public class Fill implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("Envigado").into(FillFormPage.CITY),
+        actor.attemptsTo(Enter.theValue("Sabaneta").into(FillFormPage.CITY),
                 Hit.the(Keys.ARROW_DOWN).keyIn(FillFormPage.CITY),
+                Hit.the(Keys.ENTER).into(FillFormPage.CITY),
                 Click.on(FillFormPage.CITY_MAP),
                 Enter.theValue("055428").into(FillFormPage.ZIP_CODE),
                 Click.on(FillFormPage.NEXT_BUTTON)
