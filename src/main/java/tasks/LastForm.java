@@ -11,14 +11,22 @@ import userinterface.UtestFormOnePage;
 import userinterface.UtestFormThreePage;
 
 public class LastForm implements Task {
-    public static LastForm onThePage() {
-        return Tasks.instrumented(LastForm.class);
+    private String strPassword;
+    private String strConfirmPass;
+
+    public LastForm(String strPassword, String strConfirmPass) {
+        this.strPassword = strPassword;
+        this.strConfirmPass = strConfirmPass;
+    }
+
+    public static LastForm onThePage(String strPassword, String strConfirmPass) {
+        return Tasks.instrumented(LastForm.class, strPassword,strConfirmPass);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("TypeYourPassword123**@@").into(LastFormPage.PASSWORD),
-                Enter.theValue("TypeYourPassword123**@@").into(LastFormPage.CONFIRM_PASS),
+        actor.attemptsTo(Enter.theValue(strPassword).into(LastFormPage.PASSWORD),
+                Enter.theValue(strConfirmPass).into(LastFormPage.CONFIRM_PASS),
                 Click.on(LastFormPage.OPTIONAL),
                 Click.on(LastFormPage.USE_TERMS),
                 Click.on(LastFormPage.PRIVACY_POLICY),

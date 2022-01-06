@@ -10,18 +10,27 @@ import userinterface.UtestFormOnePage;
 
 
 public class Fill implements Task {
+    private String strCity;
+    private String strZipCode;
 
-    public static Fill onThePage() {
-        return Tasks.instrumented(Fill.class);
+    public Fill(String strCity, String strZipCode) {
+        this.strCity = strCity;
+        this.strZipCode = strZipCode;
+    }
+
+
+
+    public static Fill onThePage(String strCity, String strZipCode) {
+        return Tasks.instrumented(Fill.class, strCity, strZipCode);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("Sabaneta").into(FillFormPage.CITY),
+        actor.attemptsTo(Enter.theValue(strCity).into(FillFormPage.CITY),
                 Hit.the(Keys.ARROW_DOWN).keyIn(FillFormPage.CITY),
                 Hit.the(Keys.ENTER).into(FillFormPage.CITY),
                 Click.on(FillFormPage.CITY_MAP),
-                Enter.theValue("055428").into(FillFormPage.ZIP_CODE),
+                Enter.theValue(strZipCode).into(FillFormPage.ZIP_CODE),
                 Click.on(FillFormPage.NEXT_BUTTON)
                 );
     }
