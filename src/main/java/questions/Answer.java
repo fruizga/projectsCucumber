@@ -3,13 +3,13 @@ package questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-import userinterface.LastFormPage;
+import userinterface.SecurityPolicyPage;
 
 public class Answer implements Question<Boolean> {
     private String question;
 
     public Answer(String question){
-        this.question = "Welcome to the world's largest community of freelance software testers!";
+        this.question = question;
     }
 
     public static Answer toThe(String question) {
@@ -19,7 +19,7 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String titleConfirm = Text.of(LastFormPage.CONFIRMATION).viewedBy(actor).asString();
+        String titleConfirm = Text.of(SecurityPolicyPage.CONFIRMATION).viewedBy(actor).asString();
         if (question.equals(titleConfirm)){
             result = true;
         }else {
