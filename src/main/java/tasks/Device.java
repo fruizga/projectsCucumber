@@ -27,7 +27,6 @@ public class Device implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(DevicePage.TITLE),
                 Click.on(DevicePage.COMPUTER_OS),
                 Enter.theValue(utestData.get(0).getStrComputerOS()).into(DevicePage.OS_OPTIONS),
                 Hit.the(Keys.ARROW_DOWN).into(DevicePage.OS_OPTIONS),
@@ -37,7 +36,7 @@ public class Device implements Task {
                 Hit.the(Keys.ARROW_DOWN).into(DevicePage.VERSION_OPTIONS),
                 Hit.the(Keys.ENTER).into(DevicePage.VERSION_OPTIONS),
                 Click.on(DevicePage.LANGUAGE),
-                Enter.theValue(utestData.get(0).getStrLanguage()).into(DevicePage.LANGUAGE_OPTIONS),
+                Enter.theValue(utestData.get(0).getStrOSLanguage()).into(DevicePage.LANGUAGE_OPTIONS),
                 Hit.the(Keys.ARROW_DOWN).into(DevicePage.LANGUAGE_OPTIONS),
                 Hit.the(Keys.ENTER).into(DevicePage.LANGUAGE_OPTIONS),
                 Click.on(DevicePage.MOBILE_BRAND),

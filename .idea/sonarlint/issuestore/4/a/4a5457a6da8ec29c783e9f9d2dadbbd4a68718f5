@@ -1,0 +1,24 @@
+
+[
+java:S3252
+"@Use static access with "org.openqa.selenium.By" for "className".(¦ÝÎ¡ùÿÿÿÿ
+O
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(ÍŒ©º
+T
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(›ÒùËøÿÿÿÿ
+O
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(¢ïûì
+T
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(Þ³ä›ÿÿÿÿÿ
+T
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(—®Àžþÿÿÿÿ
+T
+java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(Ë¨ã„ÿÿÿÿÿ
+W
+java:S3252"<Use static access with "org.openqa.selenium.By" for "xpath".(Å»¡çùÿÿÿÿ
+R
+java:S3252"<Use static access with "org.openqa.selenium.By" for "xpath".(Ö³É´
+l
+java:S1192"QDefine a constant instead of duplicating this literal "where we select " 4 times.(»Ýâ úÿÿÿÿ
+f
+java:S1192"PDefine a constant instead of duplicating this literal "where we write " 3 times.(ÎøÛÑ

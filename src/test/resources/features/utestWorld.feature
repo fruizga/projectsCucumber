@@ -6,7 +6,7 @@
   Scenario: Register in uTest community
     Given than Evaristo wants to join the uTest community
     | strFirstName | strLastName | strEmail           | strBirthMonth | strBirthDay | strBirthYear | strLanguage |
-    |   Sam        | Petersburg  | sampete@exampler.com |   August      |  23         |    1973      |  Russian    |
+    |   Tom        | Petersburg  | sampete@example45.com |   August      |  23         |    1973      |  Russian    |
     |   Timo       | Kotipelto   | timo@stratoex.com   |   March       |  15         |    1969      |  Finnish    |
     |              |             |           |               |             |              |             |
     When  he search for the registration form in the uTest community web page

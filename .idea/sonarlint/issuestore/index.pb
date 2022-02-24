@@ -1,0 +1,27 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+_
+/src/main/java/userinterface/UtestWorldPage.java,a\6\a65aedb2b817162d828124c8917c937ad382bdca
+O
+src/main/java/tasks/OpenUp.java,2\d\2d8b1236db2a4fc71054da85622ea204eb5887a7
+c
+3src/main/java/userinterface/SecurityPolicyPage.java,0\c\0cd97001e0a578eaf0bb011f1f752adf3b7fe4ff
+]
+-src/main/java/userinterface/LocationPage.java,5\2\52fdf72465a92c815b163afb6315aa79adf13e6d
+€
+Psrc/test/java/co/com/choucair/certification/utestproject/runners/RunnerTags.java,a\e\ae4b3e0e7410f1a75944e08d820784b6ccc7047d
+O
+target/site/serenity/index.html,c\e\ce1d953599e56cfde85da6acfdbbb722b0c73490
+S
+#src/main/java/questions/Answer.java,4\0\40a426028ddcc6f16431eac15fc11a0ac0df81d2
+W
+'src/main/java/tasks/SecurityPolicy.java,6\2\623a9a5578418b952efd0c94209ace217073ed4a
+R
+"src/main/java/model/UtestData.java,d\9\d9348b251b031a7aab2682ffd917e5db37fca5fc
+h
+8src/main/java/userinterface/PersonalInformationPage.java,4\a\4a5457a6da8ec29c783e9f9d2dadbbd4a68718f5
+\
+,src/main/java/tasks/PersonalInformation.java,6\0\606ce381979ec421a65b42b90187b47e6e2f0ed4
+—
+gsrc/test/java/co/com/choucair/certification/utestproject/stepdefinitions/WorldUtestStepDefinitions.java,b\e\be9282c351362270b44791d682406a59d10593f7
